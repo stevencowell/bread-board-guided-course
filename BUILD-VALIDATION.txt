@@ -1,0 +1,39 @@
+BREAD BOARD GUIDED COURSE - LOCAL VALIDATION
+Date: 28 July 2026
+
+PACKAGE
+- Five independent paired-week module routes
+- Fifteen substantial, project-specific theory sections
+- Thirty multiple-choice questions with option-specific feedback and progressive hints
+- Ten scaffolded written responses with live concept guidance and model responses
+- Student name/class fields and independent browser autosave per module
+- Print / Save PDF evidence action in every module
+- Twelve-card visual folio with captions, photo inputs and compressed browser autosave
+- Folio Print / Save PDF, JSON backup download and JSON restore
+- Original Bread Board plan retained
+- Visible IND5-1 to IND5-10 syllabus outcome mapping
+
+VISUAL ACCURACY
+- The original handled bread-board photograph was retained in the package but removed from student-facing pages because it did not match the supplied project plan.
+- A new plan-accurate hero shows the curved breadboard end pieces without a handle or invented decoration.
+- The twelve-card infographic deck was generated as a matching set.
+- The initial joint card was rejected because it suggested round dowels; it was replaced with a plan-accurate flat-biscuit illustration.
+
+VERIFIED
+- Zero missing local href/src references
+- Zero JavaScript syntax failures
+- Zero duplicate element IDs
+- Every route has one H1, labelled inputs/buttons and image alt text
+- All five module pages render three theory sections, six multiple-choice questions and two written responses
+- Incorrect quiz feedback, correct-answer mastery, written guidance and model-response controls function
+- Module state restores after reload
+- Folio caption, student details and compressed photo preview restore after reload
+- Folio JSON backup downloads with the expected project state and restores successfully
+- Print / Save PDF buttons prepare saved state and invoke the print flow
+- Desktop and 390 px mobile layouts have no horizontal overflow
+- All observed local HTTP requests returned successfully; no browser console warnings or errors
+
+STATUS
+- Local package only
+- Not committed, pushed or deployed
+- Google Classroom upload not implemented (outside scope)
