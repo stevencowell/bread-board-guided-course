@@ -34,6 +34,7 @@ VERIFIED
 - All observed local HTTP requests returned successfully; no browser console warnings or errors
 
 STATUS
-- Local package only
-- Not committed, pushed or deployed
+- Published from the main branch of the new bread-board-guided-course repository
+- GitHub Pages live at https://stevencowell.github.io/bread-board-guided-course/
+- Original legacy Bread Board repository not modified
 - Google Classroom upload not implemented (outside scope)

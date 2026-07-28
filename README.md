@@ -18,4 +18,4 @@ The course contains five paired-week modules, a visible syllabus-outcomes sectio
 - The folio also provides a downloadable JSON backup that can be restored to the same folio.
 - Nothing is uploaded automatically. Google Classroom upload is a later teacher-directed step and is outside this website.
 
-The original legacy Bread Board repository was not modified. This revised package is local only and has not been pushed or deployed.
+The original legacy Bread Board repository was not modified. This revised course is published at <https://stevencowell.github.io/bread-board-guided-course/>.
