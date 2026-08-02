@@ -575,7 +575,35 @@ footer p { margin: 3px; }
 .landing-hero .hero-board { aspect-ratio: 16 / 9; }
 .module-hero .hero-board { width: min(340px, 100%); aspect-ratio: 16 / 10; }
 .theory-stack { display: grid; gap: 22px; }
-.theory-stack .textbook-section { margin: 0; }
+.theory-stack .textbook-section { display: flow-root; margin: 0; }
+.theory-media {
+  float: right;
+  width: min(42%, 430px);
+  max-width: 430px;
+  margin: .35rem 0 1.35rem 1.65rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: #f5f8fa;
+  box-shadow: 0 12px 28px rgba(8, 45, 72, .1);
+}
+.theory-media--left { float: left; margin-right: 1.65rem; margin-left: 0; }
+.theory-media img {
+  display: block;
+  width: 100%;
+  max-height: 315px;
+  object-fit: contain;
+  background: #102b47;
+}
+.theory-media--cover img { aspect-ratio: 3 / 2; object-fit: cover; }
+.theory-media figcaption {
+  padding: .9rem 1rem 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.5;
+}
+.theory-media figcaption strong { display: block; margin-bottom: .2rem; color: var(--brand-dark); }
 .check-list { padding-left: 1.3rem; }
 .check-list li { margin-bottom: 8px; }
 .evidence-scope {
@@ -633,6 +661,13 @@ footer p { margin: 3px; }
 @media (max-width: 680px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-board, .module-hero .hero-board { width: 100%; max-height: 220px; margin-bottom: 24px; }
+  .theory-media, .theory-media--left {
+    float: none;
+    width: auto;
+    max-width: none;
+    margin: 1.25rem 0 1.5rem;
+  }
+  .theory-media img { max-height: 360px; }
   .folio-grid { grid-template-columns: 1fr; }
   .course-links { display: flex; overflow-x: auto; padding-bottom: 5px; }
 }
