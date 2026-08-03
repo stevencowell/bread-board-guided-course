@@ -1,4 +1,15 @@
-window.LESSON_CONFIG = {storageKey: "breadboard-weeks5-6-guided-v2", resetLabel: "Weeks 5-6"};
+window.LESSON_CONFIG = {
+  storageKey: "breadboard-weeks5-6-guided-v2",
+  resetLabel: "Weeks 5-6",
+  theoryTargets: [
+    {id: "theory-1", title: "Dry assembly before glue-up"},
+    {id: "theory-1", title: "Dry assembly before glue-up"},
+    {id: "theory-2", title: "A careful glue-up and clamping plan"},
+    {id: "theory-2", title: "A careful glue-up and clamping plan"},
+    {id: "theory-3", title: "Safe preparation for routed profiles"},
+    {id: "theory-3", title: "Safe preparation for routed profiles"}
+  ]
+};
 window.MC_QUESTIONS = [
   {
     question: "What is the main purpose of a complete dry assembly?",

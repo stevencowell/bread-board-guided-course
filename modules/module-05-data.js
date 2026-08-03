@@ -1,4 +1,15 @@
-window.LESSON_CONFIG = {storageKey: "breadboard-weeks9-10-guided-v2", resetLabel: "Weeks 9-10"};
+window.LESSON_CONFIG = {
+  storageKey: "breadboard-weeks9-10-guided-v2",
+  resetLabel: "Weeks 9-10",
+  theoryTargets: [
+    {id: "theory-1", title: "Evaluating the finished bread board against the brief"},
+    {id: "theory-1", title: "Evaluating the finished bread board against the brief"},
+    {id: "theory-1", title: "Evaluating the finished bread board against the brief"},
+    {id: "theory-2", title: "Selecting and presenting authentic folio evidence"},
+    {id: "theory-2", title: "Selecting and presenting authentic folio evidence"},
+    {id: "theory-3", title: "Final workshop care, maintenance and handover"}
+  ]
+};
 window.MC_QUESTIONS = [
   {
     question: "Which statement is the strongest evaluation evidence?",

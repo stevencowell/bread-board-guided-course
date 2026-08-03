@@ -1,4 +1,15 @@
-window.LESSON_CONFIG = {storageKey: "breadboard-weeks1-2-guided-v2", resetLabel: "Weeks 1-2"};
+window.LESSON_CONFIG = {
+  storageKey: "breadboard-weeks1-2-guided-v2",
+  resetLabel: "Weeks 1-2",
+  theoryTargets: [
+    {id: "theory-1", title: "Workshop readiness and the breadboard brief"},
+    {id: "theory-2", title: "Recognising hazards and managing workshop risk"},
+    {id: "theory-2", title: "Recognising hazards and managing workshop risk"},
+    {id: "theory-3", title: "Marking and measuring for accuracy"},
+    {id: "theory-3", title: "Marking and measuring for accuracy"},
+    {id: "theory-3", title: "Marking and measuring for accuracy"}
+  ]
+};
 window.MC_QUESTIONS = [
   {
     question: "What should guide the first practical decisions in the Bread Board project?",

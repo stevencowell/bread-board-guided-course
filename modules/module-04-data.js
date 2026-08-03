@@ -1,4 +1,15 @@
-window.LESSON_CONFIG = {storageKey: "breadboard-weeks7-8-guided-v2", resetLabel: "Weeks 7-8"};
+window.LESSON_CONFIG = {
+  storageKey: "breadboard-weeks7-8-guided-v2",
+  resetLabel: "Weeks 7-8",
+  theoryTargets: [
+    {id: "theory-1", title: "Sanding for a consistent surface"},
+    {id: "theory-1", title: "Sanding for a consistent surface"},
+    {id: "theory-2", title: "Preparing to apply an oil finish"},
+    {id: "theory-2", title: "Preparing to apply an oil finish"},
+    {id: "theory-3", title: "Responsible material use, finishing waste and sustainability"},
+    {id: "theory-3", title: "Responsible material use, finishing waste and sustainability"}
+  ]
+};
 window.MC_QUESTIONS = [
   {
     question: "Why should the complete surface be inspected before sanding begins?",

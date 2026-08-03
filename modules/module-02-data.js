@@ -1,4 +1,15 @@
-window.LESSON_CONFIG = {storageKey: "breadboard-weeks3-4-guided-v2", resetLabel: "Weeks 3-4"};
+window.LESSON_CONFIG = {
+  storageKey: "breadboard-weeks3-4-guided-v2",
+  resetLabel: "Weeks 3-4",
+  theoryTargets: [
+    {id: "theory-1", title: "Grain direction and planning a board layout"},
+    {id: "theory-1", title: "Grain direction and planning a board layout"},
+    {id: "theory-2", title: "Planning accurate biscuit joint positions"},
+    {id: "theory-2", title: "Planning accurate biscuit joint positions"},
+    {id: "theory-3", title: "Shaping timber with control"},
+    {id: "theory-3", title: "Shaping timber with control"}
+  ]
+};
 window.MC_QUESTIONS = [
   {
     question: "Why should grain direction be considered before the board components are arranged?",
