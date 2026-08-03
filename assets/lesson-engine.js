@@ -406,3 +406,5 @@
 
   document.addEventListener('DOMContentLoaded', initialise);
 }());
+
+(() => { const script = document.createElement('script'); script.src = '/bread-board-guided-course/shared/hub-navigation.js'; document.head.append(script); })();
