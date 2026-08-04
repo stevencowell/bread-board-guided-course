@@ -64,6 +64,7 @@ window.WRITTEN_QUESTIONS = [
   {
     title: "1. Diagnose a dry-assembly fault",
     prompt: "A curved end piece does not sit evenly during the dry assembly. Explain how you would investigate the cause without forcing or randomly removing timber.",
+    clarification: "What will you check during the trial fit? What would you fix before joining permanently?",
     minWords: 85,
     concepts: [
       {label: "compare with plan", terms: ["plan", "drawing", "orientation"]},
@@ -79,6 +80,7 @@ window.WRITTEN_QUESTIONS = [
   {
     title: "2. Plan a controlled glue-up",
     prompt: "Explain the sequence and checks you would prepare before adhesive is applied to the Bread Board assembly.",
+    clarification: "What is the safe glue-up order? How will you check alignment, pressure and clean-up?",
     minWords: 90,
     concepts: [
       {label: "dry fit passed", terms: ["dry fit", "dry assembly", "passed"]},

@@ -64,6 +64,7 @@ window.WRITTEN_QUESTIONS = [
   {
     title: "1. Plan a grain and component layout",
     prompt: "Explain how you would arrange and label the Bread Board components before marking joints or removing material.",
+    clarification: "What steps will you follow? Which checks and timing matter?",
     minWords: 75,
     concepts: [
       {label: "grain inspection", terms: ["grain", "defect", "appearance"]},
@@ -79,6 +80,7 @@ window.WRITTEN_QUESTIONS = [
   {
     title: "2. Explain accurate biscuit-joint preparation",
     prompt: "Explain how matching biscuit-joint positions are planned and checked before any slots are made.",
+    clarification: "What is the key idea about accurate biscuit-joint preparation? Which reasons or steps matter?",
     minWords: 80,
     concepts: [
       {label: "plan and teacher", terms: ["plan", "teacher", "approved"]},

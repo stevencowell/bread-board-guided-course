@@ -64,6 +64,7 @@ window.WRITTEN_QUESTIONS = [
   {
     title: "1. Record peer feedback and one improvement",
     prompt: "With teacher approval, review one observable Bread Board criterion with a classmate. Record your roles, one specific comment you gave, one specific comment you received, and one improvement you made or will make because of the feedback. Finish with a check or evidence item that shows whether the improvement helped. Use initials or roles rather than a classmate's full name.",
+    clarification: "What must you include in peer feedback and one improvement?",
     minWords: 100,
     concepts: [
       {label: "roles", terms: ["maker", "reviewer", "partner", "peer", "classmate", "role"]},
@@ -74,11 +75,12 @@ window.WRITTEN_QUESTIONS = [
     ],
     scaffold: ["I was the... and my classmate was the...", "The specific feedback I gave was...", "The specific feedback I received was...", "Because of that feedback, I...", "I checked the result by..."],
     prompts: ["Name both roles without using a full name.", "Give a specific, observable comment.", "Record the feedback you received accurately.", "State one change made or planned.", "Name the check, photograph or result that shows the effect."],
-    model: "I was the maker first and my classmate was the reviewer; we then swapped roles. The specific feedback I gave was that one end profile looked less even when viewed from the front, so it should be compared with the plan before any more material was removed. The feedback I received was that a small area near one joint still showed glue under strong light. Because of that feedback, I checked with the teacher, cleaned and prepared only the affected area, then inspected it again before finishing. I recorded a close photograph after the check and noted that the surface looked consistent and the joint remained aligned. I used roles rather than my classmate's full name to protect privacy."
+    model: "I was the maker first and my classmate was the reviewer; we then swapped roles. The specific feedback I gave was that one end profile looked less even when viewed from the front, so it should be compared with the plan before any more material was removed. The feedback I received was that a small area near one joint still showed glue under strong light. I used roles rather than my classmate's full name to protect privacy."
   },
   {
     title: "2. Write an evidence-based final evaluation",
     prompt: "Evaluate one strength and one area for improvement in your completed Bread Board. Use specific observations, likely causes and a realistic future action.",
+    clarification: "How well did it meet the criterion? What evidence, limitation and improvement can you give?",
     minWords: 110,
     concepts: [
       {label: "plan or brief", terms: ["plan", "brief", "criteria"]},
@@ -94,6 +96,7 @@ window.WRITTEN_QUESTIONS = [
   {
     title: "3. Select and explain authentic folio evidence",
     prompt: "Choose two project evidence items you would include in the folio and explain what each proves. Include privacy and honest sequencing.",
+    clarification: "What would you choose? Which evidence or requirements support that choice?",
     minWords: 100,
     concepts: [
       {label: "two meaningful stages", terms: ["first", "second", "stage", "photo"]},

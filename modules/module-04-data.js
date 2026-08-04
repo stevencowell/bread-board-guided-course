@@ -64,6 +64,7 @@ window.WRITTEN_QUESTIONS = [
   {
     title: "1. Explain a systematic surface-preparation routine",
     prompt: "Explain how you would inspect and sand the Bread Board without losing the intended form or contaminating the surface.",
+    clarification: "What is the key idea about a systematic surface-preparation routine? Which reasons or steps matter?",
     minWords: 85,
     concepts: [
       {label: "full inspection", terms: ["inspect", "light", "scratch", "glue"]},
@@ -79,6 +80,7 @@ window.WRITTEN_QUESTIONS = [
   {
     title: "2. Explain responsible oil-finish preparation",
     prompt: "Explain how you would prepare for the approved oil finish while protecting quality, safety and sustainability.",
+    clarification: "How could you reduce the project’s impact? What trade-off or evidence supports each change?",
     minWords: 95,
     concepts: [
       {label: "authorised sources", terms: ["teacher", "label", "sds", "procedure"]},

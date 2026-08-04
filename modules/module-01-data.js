@@ -64,6 +64,7 @@ window.WRITTEN_QUESTIONS = [
   {
     title: "1. Explain a safe start-of-lesson routine",
     prompt: "Explain what you will check before beginning practical Bread Board work and why each check matters.",
+    clarification: "What should you check before starting? Why does each check matter?",
     minWords: 70,
     concepts: [
       {label: "brief or plan", terms: ["brief", "plan", "drawing"]},
@@ -78,6 +79,7 @@ window.WRITTEN_QUESTIONS = [
   {
     title: "2. Explain an accurate marking routine",
     prompt: "Explain how you would transfer a required position from the project plan to timber without allowing small errors to build up.",
+    clarification: "How will you transfer a measurement from the plan without small errors building up?",
     minWords: 75,
     concepts: [
       {label: "read the plan", terms: ["plan", "drawing", "written dimension"]},
