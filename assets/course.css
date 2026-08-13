@@ -595,6 +595,19 @@ footer p { margin: 3px; }
 }
 .landing-hero .hero-board { aspect-ratio: 16 / 9; }
 .module-hero .hero-board { width: min(340px, 100%); aspect-ratio: 16 / 10; }
+.module-hero { min-height: 290px; background: linear-gradient(110deg, #edf3e4, #fff7d6); color: #153e2a; border-block: 1px solid #d8decf; }
+.module-hero .hero-copy { padding-block: 64px; }
+.module-hero .hero-copy .eyebrow { color: #c44935; }
+.module-hero .hero-copy h1 { color: #153e2a; font-size: clamp(2.8rem, 6vw, 4.8rem); }
+.module-hero .hero-subtitle { color: #244538; }
+.module-layout { width: min(1160px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 90px; display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 32px; align-items: start; }
+.module-main { min-width: 0; }
+.module-aside { position: sticky; top: 92px; padding: 24px; }
+.module-aside h2 { font-size: clamp(1.75rem, 3vw, 2.3rem); }
+.module-aside h3 { margin-top: 28px; }
+.module-aside ol { margin: 0; padding-left: 1.35rem; }
+.module-aside li + li { margin-top: .65rem; }
+.module-aside a { color: var(--brand-dark); font-weight: 850; }
 .theory-stack { display: grid; gap: 22px; }
 .theory-stack .textbook-section { display: flow-root; margin: 0; }
 .theory-media {
@@ -680,6 +693,8 @@ footer p { margin: 3px; }
   .folio-intro { grid-template-columns: 1fr; }
 }
 @media (max-width: 680px) {
+  .module-layout { grid-template-columns: 1fr; width: calc(100% - 22px); padding: 30px 0 64px; }
+  .module-aside { position: static; order: -1; }
   .hero-inner { grid-template-columns: 1fr; }
   .hero-board, .module-hero .hero-board { width: 100%; max-height: 220px; margin-bottom: 24px; }
   .theory-media, .theory-media--left {
