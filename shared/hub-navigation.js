@@ -3,7 +3,7 @@
 
   const HUB_URL = "https://stevencowell.github.io/Main-Page/";
   const script = document.currentScript;
-  const stylesheetUrl = script ? new URL("sister-site.css", script.src).href : "";
+  const stylesheetUrl = script ? new URL("sister-site.css?v=20260814", script.src).href : "";
   const courseRoot = script ? new URL("../", script.src) : new URL("./", location.href);
 
   if (stylesheetUrl && !document.querySelector('link[data-sister-site-styles]')) {
@@ -40,6 +40,7 @@
     { label: "Busy Work", href: "https://stevencowell.github.io/busy-worksheets/?library=timber", external: true },
     { label: "My folio", href: "breadboard-folio.html", current: path.endsWith("/breadboard-folio.html") },
     { label: "Project plan", href: "assets/breadboard-plans.pdf" },
+    { label: "Teacher resources", href: "teacher-resources.html", current: path.endsWith("/teacher-resources.html") },
     { label: "Main Menu", href: HUB_URL, external: true }
   ];
 
