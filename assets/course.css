@@ -759,3 +759,6 @@ footer p { margin: 3px; }
   .written-card textarea { min-height: 210px; padding: 12px; }
   .response-meta { display: grid; grid-template-columns: 1fr; }
 }
+
+/* Centre the Bread Board within the hero crop and bring the project slightly closer. */
+.landing-hero.course-family-hero .hero-showcase .hero-board { object-position:74% 52% !important; transform:scale(1.06) !important; transform-origin:center !important; }

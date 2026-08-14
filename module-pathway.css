@@ -139,8 +139,8 @@
   > :where(.week-card, .module-card, article) > a:last-child::after,
 :where(.week-grid, .module-grid, .module-map, #module-grid, [data-module-grid], #pathway .grid)
   > :where(.week-card, .module-card, article) > div > a:last-child::after,
-:where(.module-grid, .module-map) > :where(a, .phase-card, .module-card, .module-tile)::after,
-:where(.module-grid, .module-map) > li > :where(.module-card, .module-tile, a)::after {
+:where(.module-grid, .module-map) > :where(a, .phase-card, .module-card, .module-tile):not(:has(a:last-child))::after,
+:where(.module-grid, .module-map) > li > :where(.module-card, .module-tile, a):not(:has(a:last-child))::after {
   content: "\2192";
   position: absolute;
   right: 18px;
