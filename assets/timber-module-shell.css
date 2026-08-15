@@ -1,0 +1,182 @@
+/* Timber module shell v2 — layout authority: Desk Tidy. */
+:root {
+  --timber-page-width: 1180px;
+  --timber-page-gutter: 36px;
+  --timber-hero-height: 295px;
+  --timber-hero-start: #e7eff7;
+  --timber-hero-end: #f6f1df;
+  --timber-hero-ink: #153e2a;
+  --timber-hero-subtitle: #244538;
+  --timber-layout-accent: #315d3a;
+  --timber-card-border: #d9ddcf;
+  --timber-card-radius: 16px;
+  --timber-card-padding: 32px;
+  --timber-section-gap: 24px;
+}
+
+.aligned-module-hero {
+  min-height: var(--timber-hero-height);
+  padding: 0;
+  border: 0;
+  background: linear-gradient(135deg, var(--timber-hero-start), var(--timber-hero-end));
+  color: var(--timber-hero-ink);
+}
+.aligned-module-hero .hero-inner {
+  width: min(var(--timber-page-width), calc(100% - var(--timber-page-gutter)));
+  min-height: var(--timber-hero-height);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.aligned-module-hero .hero-copy { max-width: 820px; padding: 0; }
+.aligned-module-hero .hero-copy .eyebrow { color: var(--timber-layout-accent); }
+.aligned-module-hero .hero-copy h1 {
+  margin: 0 0 16px;
+  color: var(--timber-hero-ink);
+  font-size: 76.8px;
+  line-height: 1.15;
+}
+.aligned-module-hero .hero-subtitle { max-width: 60ch; margin: 0; color: var(--timber-hero-subtitle); }
+.aligned-module-hero .hero-pills,
+.aligned-module-hero .hero-board { display: none; }
+
+main#main-content { width: 100%; max-width: none; padding: 0; }
+
+.module-layout.aligned-module-layout {
+  width: min(var(--timber-page-width), calc(100% - var(--timber-page-gutter)));
+  max-width: var(--timber-page-width);
+  margin: 0 auto;
+  padding: 72px 0 90px;
+  display: block;
+}
+.aligned-module-layout .module-main { width: 100%; min-width: 0; }
+.aligned-module-layout .module-main > * + * { margin-top: var(--timber-section-gap); }
+.aligned-module-layout .module-learning-card,
+.aligned-module-layout .module-preview-card { display: none; }
+.aligned-module-layout .card {
+  padding: var(--timber-card-padding);
+  border: 1px solid var(--timber-card-border);
+  border-radius: var(--timber-card-radius);
+  box-shadow: 0 14px 38px rgba(32, 54, 34, .12);
+}
+
+.aligned-module-layout .module-presentation-card {
+  min-height: 260px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 32px;
+  align-items: center;
+  border-color: #b8cbaa;
+  border-left: .55rem solid var(--timber-layout-accent);
+  background: linear-gradient(135deg, #e7efe2, #fff7d8);
+}
+.module-presentation-card .overview-heading { display: block; max-width: 760px; }
+.module-presentation-card .overview-heading h2 { margin-bottom: 12px; }
+.module-presentation-card .fine { margin-bottom: 0; color: #52635a; }
+
+.aligned-module-layout .module-support-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding: 42px;
+  border-left: 6px solid var(--timber-layout-accent);
+  background: #fff;
+}
+.module-support-panel > div:first-child { max-width: 670px; }
+.module-support-panel .button-row { justify-content: flex-end; flex-shrink: 0; }
+
+.aligned-module-layout .aligned-student-evidence {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(350px, 1fr) auto;
+  gap: 22px;
+  align-items: end;
+  margin: 0;
+  padding: 14px 0 4px;
+  background: transparent;
+}
+.aligned-module-layout .student-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+.aligned-module-layout .theory-stack > * + * { margin-top: var(--timber-section-gap); }
+.aligned-module-layout .guided-practice-panel,
+.aligned-module-layout .activity-section,
+.aligned-module-layout .completion-card { border-top: 5px solid var(--timber-layout-accent); background: #fff; }
+.aligned-module-layout .textbook-section > p,
+.aligned-module-layout .textbook-section > div > p,
+.aligned-module-layout .textbook-section .section-kicker,
+.aligned-module-layout .textbook-section .kicker { max-width: none; }
+
+.section-video {
+  display: grid;
+  grid-template-columns: minmax(220px, .75fr) minmax(360px, 1.25fr);
+  gap: 24px;
+  align-items: center;
+  margin-top: 28px;
+  padding: 22px;
+  border: 1px solid #c8d7c7;
+  border-radius: 14px;
+  background: #f4f8f1;
+}
+.section-video h3 { margin-top: 0; }
+.section-video p:last-child { margin-bottom: 0; }
+.video-source { color: #52635a; font-size: .9rem; }
+.video-shell {
+  position: relative;
+  overflow: hidden;
+  min-height: 250px;
+  border-radius: 12px;
+  background: #102217;
+  box-shadow: 0 12px 28px rgba(20, 40, 26, .18);
+}
+.video-thumbnail { width: 100%; height: 100%; min-height: 250px; object-fit: cover; display: block; }
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 18px;
+  background: linear-gradient(rgba(7, 22, 13, .25), rgba(7, 22, 13, .72));
+}
+.video-play {
+  min-height: 48px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  color: #173d28;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+.video-overlay a { color: #fff; font-weight: 700; }
+.video-shell iframe { width: 100%; min-height: 250px; aspect-ratio: 16 / 9; border: 0; display: block; }
+
+@media (max-width: 760px) {
+  :root { --timber-page-gutter: 32px; --timber-card-padding: 21px; }
+  .course-bar { overflow-x: hidden; }
+  .course-bar-inner { width: 100%; max-width: 100%; overflow: hidden; }
+  .course-links { max-width: 100%; overflow-x: auto; }
+  .aligned-module-hero,
+  .aligned-module-hero .hero-inner { min-height: 0; }
+  .aligned-module-hero .hero-copy { padding: 42px 0; }
+  .aligned-module-hero .hero-copy h1 { font-size: 40px; line-height: 46px; }
+  .module-layout.aligned-module-layout { padding: 72px 0 64px; }
+  .aligned-module-layout .module-presentation-card { min-height: 0; grid-template-columns: 1fr; }
+  .aligned-module-layout .module-support-panel { display: block; padding: 28px 21px; }
+  .module-support-panel .button-row { justify-content: flex-start; margin-top: 20px; }
+  .aligned-module-layout .aligned-student-evidence { grid-template-columns: 1fr; }
+  .aligned-module-layout .student-fields { grid-template-columns: 1fr; }
+  .section-video { grid-template-columns: 1fr; padding: 18px; }
+  .video-shell,
+  .video-thumbnail,
+  .video-shell iframe { min-height: 200px; }
+}
