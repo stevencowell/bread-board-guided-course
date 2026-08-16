@@ -123,7 +123,7 @@ main#main-content { width: 100%; max-width: none; padding: 0; }
   border-radius: 14px;
   background: #f4f8f1;
 }
-.section-video h3 { margin-top: 0; }
+.section-video h3 { margin-top: 0; font-size: 2rem; line-height: 1.15; }
 .section-video p:last-child { margin-bottom: 0; }
 .video-source { color: #52635a; font-size: .9rem; }
 .video-shell {
