@@ -8,6 +8,8 @@
 
   const defaultState = {
     studentName: '',
+    studentFirstName: '',
+    studentLastName: '',
     studentClass: '',
     mc: {},
     written: {}
@@ -23,6 +25,8 @@
       if (!parsed || typeof parsed !== 'object') return freshState();
       return {
         studentName: parsed.studentName || '',
+        studentFirstName: parsed.studentFirstName || String(parsed.studentName || '').trim().split(/\s+/)[0] || '',
+        studentLastName: parsed.studentLastName || String(parsed.studentName || '').trim().split(/\s+/).slice(1).join(' ') || '',
         studentClass: parsed.studentClass || '',
         mc: parsed.mc || {},
         written: parsed.written || {}
@@ -402,7 +406,7 @@
   function updateSummary() {
     const mcMastered = mcQuestions.filter((_, index) => state.mc[index] && state.mc[index].mastered).length;
     const writtenReviewed = writtenQuestions.filter((_, index) => state.written[index] && state.written[index].checked).length;
-    const detailsComplete = Boolean(state.studentName.trim() && state.studentClass.trim());
+    const detailsComplete = Boolean(state.studentFirstName.trim() && state.studentLastName.trim() && state.studentClass.trim());
 
     const values = {
       'mc-progress-number': `${mcMastered}/${mcQuestions.length}`,
@@ -418,16 +422,26 @@
   }
 
   function bindStudentFields() {
-    const nameInput = document.getElementById('student-name');
+    const fields = document.querySelector('.student-fields');
+    if (fields && document.getElementById('student-name')) {
+      fields.innerHTML = '<label><span>First name</span><input id="student-first-name" autocomplete="given-name" type="text"></label><label><span>Last name</span><input id="student-last-name" autocomplete="family-name" type="text"></label><label><span>Class</span><input id="student-class" autocomplete="organization" type="text"></label>';
+    }
+    const firstNameInput = document.getElementById('student-first-name');
+    const lastNameInput = document.getElementById('student-last-name');
     const classInput = document.getElementById('student-class');
-    if (!nameInput || !classInput) return;
-    nameInput.value = state.studentName;
+    if (!firstNameInput || !lastNameInput || !classInput) return;
+    firstNameInput.value = state.studentFirstName;
+    lastNameInput.value = state.studentLastName;
     classInput.value = state.studentClass;
 
-    nameInput.addEventListener('input', () => {
-      state.studentName = nameInput.value;
+    const saveName = () => {
+      state.studentFirstName = firstNameInput.value;
+      state.studentLastName = lastNameInput.value;
+      state.studentName = `${state.studentFirstName} ${state.studentLastName}`.trim();
       saveState('Details saved');
-    });
+    };
+    firstNameInput.addEventListener('input', saveName);
+    lastNameInput.addEventListener('input', saveName);
     classInput.addEventListener('input', () => {
       state.studentClass = classInput.value;
       saveState('Details saved');
@@ -473,9 +487,11 @@
   }
 
   function bindInitialValues() {
-    const nameInput = document.getElementById('student-name');
+    const firstNameInput = document.getElementById('student-first-name');
+    const lastNameInput = document.getElementById('student-last-name');
     const classInput = document.getElementById('student-class');
-    if (nameInput) nameInput.value = state.studentName;
+    if (firstNameInput) firstNameInput.value = state.studentFirstName;
+    if (lastNameInput) lastNameInput.value = state.studentLastName;
     if (classInput) classInput.value = state.studentClass;
   }
 

@@ -101,7 +101,9 @@ main#main-content { width: 100%; max-width: none; padding: 0; }
   padding: 14px 0 4px;
   background: transparent;
 }
-.aligned-module-layout .student-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.aligned-module-layout .student-fields { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(150px, .7fr); gap: 14px; }
+.aligned-module-layout .aligned-student-evidence { grid-template-columns: 1fr; }
+.aligned-module-layout .aligned-student-evidence .save-status { text-align: left; }
 
 .aligned-module-layout .theory-stack > * + * { margin-top: var(--timber-section-gap); }
 .aligned-module-layout .guided-practice-panel,
