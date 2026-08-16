@@ -630,7 +630,6 @@ footer p { margin: 3px; }
   background: #102b47;
 }
 .theory-media--cover img { aspect-ratio: 3 / 2; object-fit: cover; }
-.theory-media--edge-trim img { transform: scale(1.025); transform-origin: center; }
 .theory-media figcaption {
   padding: .9rem 1rem 1rem;
   border-top: 1px solid var(--line);
