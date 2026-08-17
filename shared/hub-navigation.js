@@ -37,7 +37,7 @@
     { label: "Course", href: "index.html", current: isCourseHome },
     { label: "Modules", href: "index.html#pathway", current: path.includes("/modules/") },
     { label: "Video learning", href: "youtube-library/video-library.html", current: path.includes("/youtube-library/") },
-    { label: "Busy Work", href: "https://stevencowell.github.io/busy-worksheets/?library=timber", external: true },
+    { label: "Puzzles", href: "https://stevencowell.github.io/busy-worksheets/?library=timber", external: true },
     { label: "My folio", href: "breadboard-folio.html", current: path.endsWith("/breadboard-folio.html") },
     { label: "Project plan", href: "assets/breadboard-plans.pdf" },
     { label: "Teacher resources", href: "teacher-resources.html", current: path.endsWith("/teacher-resources.html") },
