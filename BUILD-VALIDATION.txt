@@ -1,5 +1,6 @@
 BREAD BOARD GUIDED COURSE - LOCAL VALIDATION
 Date: 28 July 2026
+Record status: Legacy 2026 validation record for the previous NSW Industrial Technology syllabus. Any IND5-* codes below document the July 2026 build only; current syllabus alignment uses the 2025 syllabus and its INT5-* outcomes.
 
 PACKAGE
 - Five independent paired-week module routes
@@ -11,7 +12,7 @@ PACKAGE
 - Twelve-card visual folio with captions, photo inputs and compressed browser autosave
 - Folio Print / Save PDF, JSON backup download and JSON restore
 - Original Bread Board plan retained
-- Visible IND5-1 to IND5-10 syllabus outcome mapping
+- Legacy 2026 syllabus mapping (previous syllabus): IND5-1 to IND5-10
 
 VISUAL ACCURACY
 - The original handled bread-board photograph was retained in the package but removed from student-facing pages because it did not match the supplied project plan.
