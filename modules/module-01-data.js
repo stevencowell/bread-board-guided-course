@@ -62,19 +62,20 @@ window.MC_QUESTIONS = [
 ];
 window.WRITTEN_QUESTIONS = [
   {
-    title: "1. Explain a safe start-of-lesson routine",
-    prompt: "Explain what you will check before beginning practical Bread Board work and why each check matters.",
-    clarification: "What should you check before starting? Why does each check matter?",
+    title: "1. Explain a safe start and incident response",
+    prompt: "Explain what you will check before beginning practical Bread Board work, why each check matters, and what you would do if an injury or sudden illness occurred.",
+    clarification: "What should you check before starting, and how would you respond and report if someone needed first aid?",
     minWords: 70,
     concepts: [
       {label: "brief or plan", terms: ["brief", "plan", "drawing"]},
       {label: "personal readiness", terms: ["ppe", "glasses", "hair", "clothing", "footwear"]},
       {label: "workspace hazards", terms: ["bench", "floor", "hazard", "clutter", "spill"]},
-      {label: "report or stop", terms: ["report", "teacher", "stop", "direction"]}
+      {label: "report or stop", terms: ["report", "teacher", "stop", "direction"]},
+      {label: "first aid response", terms: ["first aid", "first aider", "injury", "incident", "school procedure"]}
     ],
-    scaffold: ["First I will confirm...", "For personal readiness I will...", "I will inspect the workspace for...", "If something is unsafe or unclear, I will..."],
-    prompts: ["Refer to the project brief or plan.", "Include personal preparation.", "Describe a check of the shared work area.", "State when you would stop and report."],
-    model: "I will first read the project brief, plan and teacher directions so I understand the required stage. I will secure hair and loose items, wear the required PPE and check that my clothing and footwear are suitable. I will inspect the bench, floor and nearby walkway for clutter, spills, damaged equipment or loose material. If I find damage or cannot make a condition safe, I will stop, keep others clear and report it to the teacher before work begins."
+    scaffold: ["First I will confirm...", "For personal readiness I will...", "I will inspect the workspace for...", "If something is unsafe or unclear, I will...", "If an injury or illness occurs, I will..."],
+    prompts: ["Refer to the project brief or plan.", "Include personal preparation.", "Describe a check of the shared work area.", "State when you would stop and report.", "Explain how the teacher and trained first aider are involved."],
+    model: "I will first read the project brief, plan and teacher directions so I understand the required stage. I will secure hair and loose items, wear the required PPE and check that my clothing and footwear are suitable. I will inspect the bench, floor and nearby walkway for clutter, spills, damaged equipment or loose material. If I find damage or cannot make a condition safe, I will stop, keep others clear and report it to the teacher. If an injury or sudden illness occurs, I will stop work, alert the teacher immediately, keep the area safe and obtain the trained first aider through the school procedure. I will not give treatment beyond my training or include private medical details in my work."
   },
   {
     title: "2. Explain an accurate marking routine",
